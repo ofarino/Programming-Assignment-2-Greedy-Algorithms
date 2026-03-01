@@ -1,15 +1,4 @@
 # Least Recently Used (LRU) Cache implementation 
-def read_input_file(file_path):
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
-        # read in the cache size and the number of requests
-        cache_size = int(lines[0].strip().split()[0])
-        num_requests = int(lines[0].strip().split()[1])
-        # read in the requests
-        requests = [int(x) for x in lines[1].strip().split()]
-    return cache_size, num_requests, requests
-
-# LRU Cache
 def lru_cache(cache_size, requests):
     cache = {}
     cache_misses = 0
