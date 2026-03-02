@@ -3,7 +3,7 @@ Olivia Farino: 91264400
 
 Boglarka Csanadi: 51900580
 
-**How to Run**
+<h1>**How to Run**</h1>
 
 From the project root run:
 
