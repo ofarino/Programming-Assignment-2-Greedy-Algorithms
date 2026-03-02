@@ -8,14 +8,14 @@ Boglarka Csanadi: 51900580
 From the project root run:
 
 python3 src/main.py
-
 or
-
 python src/main.py
+
 
 **Output**
 
 Output is displayed in tests/example.out
+
 
 **To Test Other Files**
 
