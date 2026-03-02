@@ -1,4 +1,4 @@
-# Among items currently in the cache, evict the one whose next request occurs farthest in the future (or never occurs again).
+# Among items currently in the cache, evict the one whose next request occurs farthest in the future (or never occurs again)
 def optff_cache(cache_size, requests):
     cache = []
     cache_misses = 0
