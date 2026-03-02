@@ -31,11 +31,11 @@ in src/main.py adjust file name on the first line of **if __name__ == '__main__'
 | File 2 | 10 | 75 | 67 | 66 | 39 |
 | File 3 | 6 | 60 | 60 | 60 | 48 | 
 
-Does OPTFF have the fewest misses?
+*Does OPTFF have the fewest misses?*
 
 Yes, OPTFF has the fewest misses for all of our input files.
 
-How does FIFO compare to LRU?
+*How does FIFO compare to LRU?*
 
 FIFO typically has slightly more misses than LRU, but the difference depends on the input sequence.
 
@@ -47,6 +47,8 @@ There does exist a request sequence for which OPTFF incurs strictly fewer misses
 
 
 k = 3; m = 6
+
+
 1 2 3 4 1 2
 
 
