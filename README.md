@@ -19,7 +19,10 @@ Output is displayed in tests/example.out
 
 <h2>To Test Other Files</h2>
 
-in src/main.py adjust file name on the first line of **if __name__ == '__main__':**
+in src/main.py adjust file name on the first line after **if __name__ == '__main__':**
+
+• Current input is ./data/example.in
+• All input files used located in data folder
 
 <h2>Written Component</h2>
 
@@ -53,7 +56,11 @@ k = 3; m = 6
 
 
 FIFO: 6 misses
+
+
 LRU: 6 misses
+
+
 OPTFF: 4 misses
 
 
