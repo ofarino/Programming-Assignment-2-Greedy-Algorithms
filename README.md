@@ -10,6 +10,8 @@ Boglarka Csanadi: 51900580
 | File 3 | blank | blank | blank | blank | blank | 
 
 Does OPTFF have the fewest misses?
+
+
 How does FIFO compare to LRU?
 
 **Question 2: Bad Sequence for LRU or FIFO**
