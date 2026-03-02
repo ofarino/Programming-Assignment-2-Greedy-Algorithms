@@ -3,7 +3,7 @@ Olivia Farino: 91264400
 
 Boglarka Csanadi: 51900580
 
-<h1>**How to Run**</h1>
+<h2>How to Run</h2>
 
 From the project root run:
 
@@ -12,17 +12,17 @@ or
 python src/main.py
 
 
-**Output**
+<h2>Output</h2>
 
 Output is displayed in tests/example.out
 
 
-**To Test Other Files**
+<h2>To Test Other Files</h2>
 
 in src/main.py adjust file name on the first line of **if __name__ == '__main__':**
 
 
-**Question 1: Empirical Comparison**
+<h3>Question 1: Empirical Comparison</h3>
 | Input File | k | m | FIFO | LRU | OPTFF |
 | --- | --- | --- | --- | --- | --- |
 | File 1 | 8 | 50 | 48 | 47 | 29 |
@@ -38,7 +38,7 @@ How does FIFO compare to LRU?
 FIFO typically has slightly more misses than LRU, but the difference depends on the input sequence.
 
 
-**Question 2: Bad Sequence for LRU or FIFO**
+<h3>Question 2: Bad Sequence for LRU or FIFO</h3>
 
 
 There does exist a request sequence for which OPTFF incurs strictly fewer misses than LRU (or FIFO), below is an example of such as sequence:
@@ -53,4 +53,4 @@ LRU: 6 misses
 OPTFF: 4 misses
 
 
-**Question 3: Prove OPTFF is Optimal**
+<h3>Question 3: Prove OPTFF is Optimal</h3>
