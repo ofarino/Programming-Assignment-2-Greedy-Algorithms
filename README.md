@@ -39,9 +39,14 @@ FIFO typically has slightly more misses than LRU, but the difference depends on 
 
 
 **Question 2: Bad Sequence for LRU or FIFO**
+
+
 There does exist a request sequence for which OPTFF incurs strictly fewer misses than LRU (or FIFO), below is an example of such as sequence:
+
+
 k = 3; m = 6
 1 2 3 4 1 2
+
 
 FIFO: 6 misses
 LRU: 6 misses
