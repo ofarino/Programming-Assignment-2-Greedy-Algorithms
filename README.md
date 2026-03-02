@@ -36,11 +36,11 @@ in src/main.py adjust file name on the first line after **if __name__ == '__main
 | File 2 | 10 | 75 | 67 | 66 | 39 |
 | File 3 | 6 | 60 | 60 | 60 | 48 | 
 
-<u>Does OPTFF have the fewest misses?</u>
+**Does OPTFF have the fewest misses?**
 
 Yes, OPTFF has the fewest misses for all of our input files.
 
-<u>How does FIFO compare to LRU?</u>
+**How does FIFO compare to LRU?**
 
 FIFO typically has slightly more misses than LRU, but the difference depends on the input sequence.
 
