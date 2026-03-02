@@ -21,8 +21,10 @@ Output is displayed in tests/example.out
 
 in src/main.py adjust file name on the first line of **if __name__ == '__main__':**
 
+<h2>Written Component</h2>
 
 <h3>Question 1: Empirical Comparison</h3>
+
 | Input File | k | m | FIFO | LRU | OPTFF |
 | --- | --- | --- | --- | --- | --- |
 | File 1 | 8 | 50 | 48 | 47 | 29 |
