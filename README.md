@@ -65,7 +65,7 @@ LRU: 6 misses
 
 OPTFF: 4 misses
 
-**Reasoning:**
+<h4>Reasoning:</h4>
 
 Both FIFO and LRU do not account for future requests in the sequence. When the cache is full FIFO evicts items based on their insertion order and LRU evicts based on recent usage. OPTFF knows the future sequence and is able to evict an item whose next use is the farthest in the future, or not part of the sequence, which minimizes cache misses.
 
