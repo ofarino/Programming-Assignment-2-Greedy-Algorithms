@@ -14,7 +14,7 @@ def read_input_file(file_path):
     return cache_size, num_requests, requests
 
 if __name__ == "__main__":
-    cache_size, num_requests, requests = read_input_file("./data/file3.in")
+    cache_size, num_requests, requests = read_input_file("./data/example.in")
     lru_cache_misses = lru.lru_cache(cache_size, requests)
     fifo_cache_misses = fifo.fifo_cache(cache_size, requests)
     optff_cache_misses = optff.optff_cache(cache_size, requests)
