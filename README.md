@@ -32,7 +32,7 @@ in src/main.py adjust file name on the first line after **if __name__ == '__main
 
 | Input File | k | m | FIFO | LRU | OPTFF |
 | --- | --- | --- | --- | --- | --- |
-| File 1 | 8 | 50 | 48 | 47 | 29 |
+| File 1 | 8 | 50 | 45 | 42 | 25 |
 | File 2 | 10 | 75 | 67 | 66 | 39 |
 | File 3 | 6 | 60 | 60 | 60 | 48 | 
 
