@@ -73,17 +73,37 @@ In this sequence, when the 4th request occurs (4), it doesn't exist in the cache
 
 <h3>Question 3: Prove OPTFF is Optimal</h3>
 
+<h4>Initial state:</h4>
+
+
 Let OPTFF be Belady’s Farthest-in-Future algorithm.
 Let A be any offline algorithm that knows the full request sequence.
 Prove that the number of misses of OPTFF is no larger than that of A on any fixed sequence.
 
-Suppose for contradiction that A has less misses then OPTFF for some sequence S.
-There is a time when A and OPTFF have a different eviction.
-Lets say OPTFF evicts x and A evicts some value y that doesnt equal x.
-Therefore we know either x is further in the future than y or x is never requested again because OPTFF always evicts the furthest value in the future.
-This means there are two cases for y:
-    y is requested before x, then A will miss before OPTFF.
-    y and x are never requested again.
+
+• Suppose for contradiction that A has less misses then OPTFF for some sequence S.
+
+
+• There is a time when A and OPTFF have a different eviction.
+
+
+• Lets say OPTFF evicts x and A evicts some value y that doesnt equal x.
+
+
+• Therefore we know either x is further in the future than y or x is never requested again because OPTFF always evicts the furthest value in the future.
+
+
+• This means there are two cases for y:
+
+
+    - y is requested before x, then A will miss before OPTFF.
+
+    
+    - y and x are never requested again.
+
+    
 In either case A cannot have less misses then OPTFF.
+
+
 Therefore the number of misses of OPTFF is no larger than that of A on any fixed sequence.
 
