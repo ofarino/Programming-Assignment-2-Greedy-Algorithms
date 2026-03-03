@@ -68,6 +68,8 @@ OPTFF: 4 misses
 <h4>Reasoning:</h4>
 
 Both FIFO and LRU do not account for future requests in the sequence. When the cache is full FIFO evicts items based on their insertion order and LRU evicts based on recent usage. OPTFF knows the future sequence and is able to evict an item whose next use is the farthest in the future, or not part of the sequence, which minimizes cache misses.
+
+
 In this sequence, when the 4th request occurs (4), it doesn't exist in the cache. Both LRU and FIFO evict the 1st item in the cache (1) because the first three items are distinct, so 1 is the least recently used and the first in. However, the 5th request is also 1. Because OPTFF knows the future sequence, it sees that both 1 and 2 are accessed again, so it evicts 3 instead, resulting in 2 less misses than both FIFO and LRU.
 
 
@@ -99,10 +101,10 @@ Prove that the number of misses of OPTFF is no larger than that of A on any fixe
 • This means there are two cases for y:
 
 
-    * y is requested before x, then A will miss before OPTFF.
+   • y is requested before x, then A will miss before OPTFF.
 
-    
-    * y and x are never requested again.
+   
+   • y and x are never requested again.
 
     
 In either case A cannot have less misses then OPTFF.
