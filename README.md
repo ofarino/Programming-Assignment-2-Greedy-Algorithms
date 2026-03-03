@@ -81,6 +81,9 @@ Let A be any offline algorithm that knows the full request sequence.
 Prove that the number of misses of OPTFF is no larger than that of A on any fixed sequence.
 
 
+<h4>Proof:</h4>
+
+
 • Suppose for contradiction that A has less misses then OPTFF for some sequence S.
 
 
@@ -96,10 +99,10 @@ Prove that the number of misses of OPTFF is no larger than that of A on any fixe
 • This means there are two cases for y:
 
 
-    - y is requested before x, then A will miss before OPTFF.
+    * y is requested before x, then A will miss before OPTFF.
 
     
-    - y and x are never requested again.
+    * y and x are never requested again.
 
     
 In either case A cannot have less misses then OPTFF.
