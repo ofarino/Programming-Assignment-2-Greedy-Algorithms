@@ -16,11 +16,13 @@ def optff_cache(cache_size, requests):
                     try:
                         index = requests.index(item, i + 1)
                     except ValueError:
-                        index = float('inf')  # Item is not requested again
+                        # Item is not requested again
+                        index = float('inf')
                     if index > farthest_index:
                         farthest_index = index
                         farthest_request = item
-                cache.remove(farthest_request)  # Evict the item that is requested farthest in the future
+                # Evict the item that is requested farthest in the future        
+                cache.remove(farthest_request)
                 cache.append(request)
 
     return cache_misses
