@@ -101,10 +101,10 @@ Prove that the number of misses of OPTFF is no larger than that of A on any fixe
 • This means there are two cases for y:
 
 
-   • y is requested before x, then A will miss before OPTFF.
+      - y is requested before x, then A will miss before OPTFF.
 
    
-   • y and x are never requested again.
+      - y and x are never requested again.
 
     
 In either case A cannot have less misses then OPTFF.
